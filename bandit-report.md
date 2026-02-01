@@ -146,28 +146,41 @@ where:
 ### Password 
 > 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
 
-### Password 
-2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
-
 ## Bandit level 5
+The password for the next level is stored in a file somewhere under the inhere directory and has all of the following properties:
+
+human-readable
+1033 bytes in size
+not executable
 
 ### **Goals:**
-- LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+- Find the password for the next level located in a file somewhere under the _'inhere'_ directory that is:
+  - human-readable
+  - 1033 bytes in size
+  - not executable.
  
 
 ### **Commands:**
 ```bash
-LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+ls -alps
+find . -type f -size 1033c ! -executable | xargs cat
 ```
 
 where:
-* _LLL_ LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+* _find . -type f -size 1033c ! -executable_ is a command that searches for files with specific criteria:
+  * _find ._ starts the search in the current directory (.).
+  * _-type f_ specifies that we are looking for files (not directories).    
+    * _-size 1033c_ looks for files that are exactly 1033 bytes in size (c stands for bytes).
+    * _! -executable_ excludes executable files from the search results.
+* _| xargs cat_ takes the output of the previous command (the list of files found) and passes it as arguments to the _cat_ command, which displays the contents of those files.
+  * _|_ is the pipe operator, which takes the output of one command and uses it as input for another command.
+  * _xargs_ is a command that builds and executes command lines from standard input.
 
 
 **Watch the file called _'Bandit5.cast'_ to see in real time the recording of the terminal of this level**
 
 ### Password 
-LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+> HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
 
 ## Bandit level 6
 
