@@ -225,21 +225,22 @@ morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
 ## Bandit level 7
 
 ### **Goals:**
-- LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+- Find the password for the next level located in the file _'data.txt'_ next to the word _'millionth'_.
 
 ### **Commands:**
 ```bash
-LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+cat data.txt | grep millionth
 ```
 
 where:
-* _LLL_ LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+* _grep_ is a command-line utility used to search for specific patterns or strings within files or input.
+* _millionth_ is the specific word you are searching for in the file _data.txt
 
 
 **Watch the file called _'Bandit7.cast'_ to see in real time the recording of the terminal of this level**
 
 ### Password 
-LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+> dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
 
 ## Bandit level 8
 
