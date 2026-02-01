@@ -35,17 +35,25 @@
 ## Bandit level 0
 
 ### **Goals:**
-- LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+- Log into the game using ssh.
+- Find the password for the next level located in a file called _'readme'_ located in the home directory.
 
 ### **Commands:**
 ```bash
-LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+ssh bandit0@bandit.labs.overthewire.org -p 2220
+ls
+cat readme
 ```
 where:
-* LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+* _ssh_ is the command to log into a remote server using the Secure Shell protocol.
+* _bandit0_ is the username for level 0.
+* _bandit.labs.overthewire.org_ is the hostname of the server.
+* _-p 2220_ specifies the port number to connect to (2220 in this case).
+* _ls_ is the command to list files and directories in the current directory.
+* _cat_ is the command to display the contents of a file.
 
 ### Password
-LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 
 
 ## Bandit level 1
