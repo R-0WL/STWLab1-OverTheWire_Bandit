@@ -70,25 +70,20 @@ cat ./"-"
 
 ### Password 
 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
-
 ## Bandit level 2
 
 ### **Goals:**
-- LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+- Find the password for the next level located in a file called _'--spaces in this filename--'_ located in the home directory.
 
 ### **Commands:**
 ```bash
-LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+cat ./"--spaces in this filename--"
 ```
-
-where:
-* _LLL_ LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
-
 
 **Watch the file called _'Bandit2.cast'_ to see in real time the recording of the terminal of this level**
 
 ### Password 
-LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 
 ## Bandit level 3
 
