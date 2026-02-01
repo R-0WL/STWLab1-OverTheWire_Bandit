@@ -185,21 +185,42 @@ where:
 ## Bandit level 6
 
 ### **Goals:**
-- LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+- Find the password for the next level located somewhere on the server that is:
+  - owned by user bandit7
+  - owned by group bandit6
+  - 33 bytes in size.
 
 ### **Commands:**
 ```bash
-LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+cd ..
+cd ~
+find / -user bandit7 -group bandit6 -size 33c
+find / -user bandit7 -group bandit6 -size 33c | grep password 
+cat /var/lib/dpkg/info/bandit7.password
+find / -user bandit7 -group bandit6 -size 33c 2>/dev/null | xargs cat
 ```
 
 where:
-* _LLL_ LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+* _cd .._ is the command to move up one directory level; if you want to do it the hard way.
+And if you get lost, you can always return to your home directory with:
+* _cd ~_ is the command to change the current directory to the user's home directory.
+* _find / -user bandit7 -group bandit6 -size 33c_ is a command that searches for files with specific criteria:
+  * _find /_ starts the search from the root directory (/).
+  * _-user bandit7_ specifies that we are looking for files owned by the user bandit7.
+  * _-group bandit6_ specifies that we are looking for files owned by the group bandit6.
+  * _-size 33c_ looks for files that are exactly 33 bytes in size (c stands for bytes).
+* _| grep password_ pipes the output of the previous command to the _grep_ command, which filters the results to only include lines that contain the word "password". 
+Sometimes the grep command only highlights the matching part, so you have all the lines in the console.
+To fix that, you can use:
+* _2>/dev/null_ redirects any error messages (like permission denied) to /dev/null, effectively ignoring them.
+  * _2>_ redirects the standard error (file descriptor 2) to the specified location.
+  * _/dev/null_ is a special file that discards all data written to it.
 
 
 **Watch the file called _'Bandit6.cast'_ to see in real time the recording of the terminal of this level**
 
 ### Password 
-LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
 
 ## Bandit level 7
 
