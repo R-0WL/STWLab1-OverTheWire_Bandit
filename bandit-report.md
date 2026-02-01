@@ -53,7 +53,8 @@ where:
 * _cat_ is the command to display the contents of a file.
 
 ### Password
-ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+> ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+
 
 ## Bandit level 1
 
@@ -69,7 +70,9 @@ cat ./"-"
 **Watch the file called _'Bandit1.cast'_ to see in real time the recording of the terminal of this level**
 
 ### Password 
-263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+> 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+
+
 ## Bandit level 2
 
 ### **Goals:**
@@ -83,7 +86,7 @@ cat ./"--spaces in this filename--"
 **Watch the file called _'Bandit2.cast'_ to see in real time the recording of the terminal of this level**
 
 ### Password 
-MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
+> MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 
 ## Bandit level 3
 
@@ -121,26 +124,30 @@ bandit() {
 **Watch the file called _'Bandit3.cast'_ to see in real time the recording of the terminal of this level**
 
 ### Password 
-2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
+> 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
 
 ## Bandit level 4
 
 ### **Goals:**
-- LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+- Find the password for the next level located in the only human-readable file in the _'inhere'_ directory.
 
 ### **Commands:**
 ```bash
-LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+file ./*
 ```
 
 where:
-* _LLL_ LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+* _file_ is a command used to determine the type of a file.
+* _*_ is a wildcard that represents all files in the current directory.
 
 
 **Watch the file called _'Bandit4.cast'_ to see in real time the recording of the terminal of this level**
 
 ### Password 
-LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+> 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
+
+### Password 
+2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
 
 ## Bandit level 5
 
