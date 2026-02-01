@@ -88,22 +88,40 @@ MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 ## Bandit level 3
 
 ### **Goals:**
-- LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
- 
+- Find the password for the next level located in a hidden file located in the _'inhere'_ directory.
 
 ### **Commands:**
 ```bash
-LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+bandit 3
+
+ls -alps
+cd inhere
+ls -la
+cat ...Hiding-From-You
 ```
 
 where:
-* _LLL_ LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+* _bandit_  is a function in Bash that allows you to switch between different Bandit levels by specifying the level number as an argument.
+```bash
+bandit() {
+  ssh -p 2220 bandit"$1"@bandit.labs.overthewire.org
+}
 
+```
+* _3_ is the level number you want to switch to.
+* _ls -alps_ is a command that combines several options for the _ls_ command:
+  * _-a_ lists all files, including hidden files (those starting with a dot).
+  * _-l_ provides a detailed listing format, showing file permissions, ownership, size, and modification date.
+  * _-p_ appends a slash (/) to directory names to distinguish them from regular files.
+  * _-s_ displays the size of each file in blocks.
+* _cd_ is the command to change the current directory.
+* _inhere_ is the name of the directory you want to navigate into.
+* _cat ...Hiding-From-You_ is the command to display the contents of the hidden file named _'...Hiding-From-You'_.
 
 **Watch the file called _'Bandit3.cast'_ to see in real time the recording of the terminal of this level**
 
 ### Password 
-LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
 
 ## Bandit level 4
 
