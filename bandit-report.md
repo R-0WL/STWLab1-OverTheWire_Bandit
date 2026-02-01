@@ -220,7 +220,7 @@ To fix that, you can use:
 **Watch the file called _'Bandit6.cast'_ to see in real time the recording of the terminal of this level**
 
 ### Password 
-morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+> morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
 
 ## Bandit level 7
 
@@ -267,18 +267,21 @@ If you dont sort the file first, uniq will only remove consecutive duplicate lin
 ## Bandit level 9
 
 ### **Goals:**
-- LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+- Find the password for the next level located in the file _'data.txt'_ in one of the few human-readable strings, preceded by several ‘=’ characters.
 
 ### **Commands:**
 ```bash
-LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+strings data.txt | grep '=='
 ```
 
 where:
-* _LLL_ LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+* _strings_ is a command-line utility that extracts printable strings from binary files.
 
 
 **Watch the file called _'Bandit9.cast'_ to see in real time the recording of the terminal of this level**
+
+### Password 
+> FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
 
 ### Password 
 LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
