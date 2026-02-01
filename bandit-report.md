@@ -55,26 +55,21 @@ where:
 ### Password
 ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 
-
 ## Bandit level 1
 
 ### **Goals:**
-- LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL 
+- Find the password for the next level located in a file called _'-'_ located in the home directory.
 
 ### **Commands:**
 ```bash
-LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+cat ./"-"
 ```
-
-where:
-* _LLL_ LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
 
 
 **Watch the file called _'Bandit1.cast'_ to see in real time the recording of the terminal of this level**
 
 ### Password 
-LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
-
+263JGJPfgU6LtdEvgfWU1XP5yac29mFx
 
 ## Bandit level 2
 
