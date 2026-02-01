@@ -245,21 +245,24 @@ where:
 ## Bandit level 8
 
 ### **Goals:**
-- LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+- Find the password for the next level located in the file _'data.txt'_ and is the only line of text that occurs only once
 
 ### **Commands:**
 ```bash
-LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+sort data.txt  | uniq -u
 ```
 
 where:
-* _LLL_ LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+* _sort_ is a command-line utility that arranges the lines of text in a specified order, typically in ascending or alphabetical order.
+* _uniq -u_ is a command-line utility that filters out duplicate lines from a sorted input, displaying only the unique lines that occur exactly once.
+ * _-u_ option tells uniq to only print unique lines.
+If you dont sort the file first, uniq will only remove consecutive duplicate lines, so sorting is necessary to ensure all duplicates are adjacent.
 
 
 **Watch the file called _'Bandit8.cast'_ to see in real time the recording of the terminal of this level**
 
 ### Password 
-LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+> 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
 
 ## Bandit level 9
 
