@@ -283,27 +283,26 @@ where:
 ### Password 
 > FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
 
-### Password 
-LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
-
 ## Bandit level 10
 
 ### **Goals:**
-- LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+- Decode the file _'data.txt'_ which is encoded in base64 to find the password for the next level.
 
 ### **Commands:**
 ```bash
-LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+base64 -d data.txt
 ```
 
 where:
-* _LLL_ LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
-
+* _base64 -d_ is a command-line utility that decodes data encoded in base64 format.
+  * _-d_ option specifies that the operation is to decode the input data.
 
 **Watch the file called _'Bandit10.cast'_ to see in real time the recording of the terminal of this level**
 
 ### Password 
-LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+The password is
+ > dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
+
 
 ## Bandit level 11
 
